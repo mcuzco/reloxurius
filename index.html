@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RELOXURIUS - Tienda de relojes</title>
+
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!--Box icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav__center container">
+      <div class="nav__logo">
+        <h1>RELO <span>XURIUS</span></h1>
+      </div>
+      <ul class="nav__list">
+        <span>
+          <i class="bx bxs-watch"></i>
+        </span>
+        <div class="carrito__icon">
+          <i class="bx bx-cart"></i>
+          <span class="item__total">0</span>
+        </div>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Filter-->
+  <section class="filter">
+    <div class="grid">
+      <div class="div">
+        <label for="buscar"><span><i class="bx bx-search"></i></span></label>
+        <input type="text" id="buscar" placeholder="Buscar relojes...">
+      </div>
+      <div class="category">
+        <select id="category" onclick="categoryValue()">
+          <option value="">Marcas</option>
+          <option value="rolex">Rolex</option>
+          <option value="omega">Omega</option>
+          <option value="audemars">Audemars</option>
+          <option value="rolexDay">Rolex Day</option>
+          <option value="hublot">Hublot</option>
+          <option value="tag">Tag Heuer</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!--Description-->
+  <section class="descripcion">
+    <div class="descripcion-body">
+      <div class="container">
+        <h1 class="title">
+          ¡Bienvenido a RELOXURIUS!
+        </h1>
+        <h2 class="subtitle">
+          La empresa líder en la venta de relojes de lujo. Ofrecemos a nuestros clientes una amplia selección de relojes
+          de marcas reconocidas, todos de alta calidad y diseño único. Cada reloj es una herramienta importante en la
+          vestimenta de una persona, y en Reloxurius entendemos la importancia de darle a nuestros clientes la
+          satisfacción personal que buscan. Con nosotros, podrá encontrar el reloj perfecto para complementar su estilo
+          y reflejar su personalidad. ¡No espere más y visítenos para descubrir la colección de relojes de lujo más
+          impresionante del mercado!
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <!--Productos-->
+  <section class="productos">
+    <div class="productos__center">
+      <!-- <div class="producto">
+        <div class="image__container">
+          <img
+            src="https://cdn4.chrono24.com/images/topmodels/2875-7wlcl6ogfoc0qxg22ox6up9m-Original.png?auto=compress&amp;h=305"
+            alt="">
+        </div>
+        <div class="producto__footer">
+          <h1>Rejoles Originales</h1>
+          <div class="rating">
+            <span>
+              <i class="bx bxs-star"></i>
+            </span>
+            <span>
+              <i class="bx bxs-star"></i>
+            </span>
+            <span>
+              <i class="bx bxs-star"></i>
+            </span>
+            <span>
+              <i class="bx bxs-star"></i>
+            </span>
+            <span>
+              <i class="bx bx-star"></i>
+            </span>
+          </div>
+          <div class="price">$102.00</div>
+        </div>
+        <div class="bottom">
+          <div class="btn__group">
+            <a href="#" class="btn addToCart">Añadir carrito</a>
+            <a href="producto-detalles.html" class="btn view">Vista</a>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!--Carrito-->
+
+  <section class="carrito__overlay">
+    <div class="carrito">
+      <span class="close__carrito">
+        <i class="bx bx-x"></i>
+      </span>
+      <h1>Su Carrito</h1>
+
+      <div class="carrito__center">
+
+        <!-- <div class="carrito__item">
+
+            <img src="https://cdn4.chrono24.com/images/topmodels/2875-7wlcl6ogfoc0qxg22ox6up9m-Original.png?auto=compress&amp;h=305" alt="reloj">
+            <div>
+              <h3>Relojes Originales </h3>
+              <p class="price">$122</p>
+            </div>
+            <div>
+              <span>
+                <i class="bx bxs-up-arrow"></i>
+              </span>
+              <p>1</p>
+              <span>
+                <i class="bx bxs-down-arrow"></i>
+              </span>
+            </div>
+            <div>
+              <span class="remove__item">
+                <i class="bx bx-trash"></i>
+              </span>
+            </div>
+
+            
+          </div> -->
+      </div>
+
+      <div class="carrito__footer">
+        <h3>Total: $ <span class="carrito__total">0</span></h3>
+        <button class="clear__carrito btn">remover carrito</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Sección de contacto -->
+  <section class="contact">
+    <div class="container">
+      <div class="contact-title">
+        <h2>Contáctanos</h2>
+      </div>
+      <div class="contact-body">
+        <div class="contact-social">
+          <a href="https://www.facebook.com/reloxurius-rx" target="_blank">
+            <i class="bx bxl-facebook"></i>
+            <p class="social-name">reloxurius-rx</p>
+          </a>
+          <a href="https://www.instagram.com/reloxurius" target="_blank">
+            <i class="bx bxl-instagram"></i>
+            <p class="social-name">@reloxurius</p>
+          </a>
+          <a href="https://twitter.com/reloxurius_rx" target="_blank">
+            <i class="bx bxl-twitter"></i>
+            <p class="social-name">reloxurius_rx</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+  <script src="./js/scripts.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo">
+        <h1>RELO <span>XURIUS</span></h1>
+      </div>
+      <div class="footer__links">
+      </div>
+      <div class="footer__contact">
+        <h3 class="footer__title">Encuéntranos</h3>
+        <p>Dirección: Calle España, Portoviejo</p>
+        <p>Teléfono: (123) 456-7890</p>
+        <p>Correo electrónico: reloxurius_contacto@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p>Copyright &copy; Reloxurius. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
